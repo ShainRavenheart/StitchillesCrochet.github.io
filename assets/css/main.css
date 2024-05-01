@@ -2132,7 +2132,121 @@ input, select, textarea {
 			.image.fit img {
 				width: 100%;
 			}
+	
+	.image {
+		border-radius: 3px;
+		border: 0;
+		display: inline-block;
+		position: relative;
+	}
 
+		.image img {
+			border-radius: 3px;
+			display: block;
+		}
+
+		.image.left {
+			float: left;
+			margin: 0 2em 2em 0;
+			top: 0.25em;
+		}
+
+		.image.right {
+			float: right;
+			margin: 0 0 2em 2em;
+			top: 0.25em;
+		}
+
+		.image.left, .image.right {
+			max-width: 40%;
+		}
+
+			.image.left img, .image.right img {
+				width: 100%;
+			}
+
+		.image.fit {
+			display: block;
+			margin: 0 0 2em 0;
+			width: 100%;
+		}
+
+			.image.fit img {
+				width: 100%;
+			}
+
+/* profile */
+	.profile {
+		/* border-radius: 3px;
+		border: 0;
+		display: inline-block;
+		position: relative;
+			}
+		
+		.profile img {
+			border-radius: 3px;
+			display: inline;
+			}
+		
+		.profile.right {
+			float: right;
+			margin: 0 0 2em 2em;
+			top: 0.25em;
+			}
+		
+		.profile.fit {
+			display: inline;
+			margin: 0 0 2em 0;
+			width: 100%;
+			}
+		
+		.profile.fit img {
+			width: 30%; */
+			border-radius: 0.375em;
+  border: 0;
+  display: inline-block;
+  position: relative; }
+  .profile img {
+    border-radius: 0.375em;
+    display: block; }
+  .profile.left, .image.right {
+    max-width: 40%; }
+    .profile.left img, .image.right img {
+      width: 100%; }
+  .profile.left {
+    float: left;
+    padding: 0 1.5em 1em 0;
+    top: 0.25em; }
+  .profile.right {
+    float: right;
+    padding: 0 0 1em 1.5em;
+    top: 0.25em; }
+  .profile.fit {
+    display: block;
+    margin: 0 0 2em 0;
+    width: 100%; }
+    .profile.fit img {
+      width: 100%; }
+  .profile.main {
+    display: block;
+    margin: 0 0 3em 0;
+    width: 100%; }
+    .profile.main img {
+      width: 100%; }
+
+a.profile {
+  overflow: hidden; }
+  a.profile img {
+    -moz-transition: -moz-transform 0.2s ease;
+    -webkit-transition: -webkit-transform 0.2s ease;
+    -ms-transition: -ms-transform 0.2s ease;
+    transition: transform 0.2s ease; }
+  a.profile:hover img {
+    -moz-transform: scale(1.075);
+    -webkit-transform: scale(1.075);
+    -ms-transform: scale(1.075);
+    transform: scale(1.075);
+			}
 /* List */
 
 	ol {
@@ -2785,6 +2899,134 @@ input, select, textarea {
 
 		}
 
+
+/* profile1 */
+
+		.profile1 {
+			-moz-align-items: center;
+			-webkit-align-items: center;
+			-ms-align-items: center;
+			align-items: center;
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+		}
+	
+			.profile1 .image {
+				-moz-order: 1;
+				-webkit-order: 1;
+				-ms-order: 1;
+				order: 1;
+				border-radius: 0;
+				width: 40%;
+			}
+	
+				.profile1 .image img {
+					border-radius: 0;
+					width: 100%;
+				}
+	
+			.profile1 .content {
+				padding: 2em 4em 0.1em 4em ;
+				-moz-order: 2;
+				-webkit-order: 2;
+				-ms-order: 2;
+				order: 2;
+				max-width: 48em;
+				width: 60%;
+			}
+	
+			.profile1:nth-child(2n) {
+				-moz-flex-direction: row-reverse;
+				-webkit-flex-direction: row-reverse;
+				-ms-flex-direction: row-reverse;
+				flex-direction: row-reverse;
+			}
+	
+			.profile1:nth-child(1) {
+				background-color: #412222;
+			}
+	
+			.profile1:nth-child(2) {
+				background-color: #412222;
+			}
+	
+			.profile1:nth-child(3) {
+				background-color: #412222;
+			}
+	
+			.profile1:nth-child(4) {
+				background-color: #412222;
+			}
+	
+			.profile1:nth-child(5) {
+				background-color: #412222;
+			}
+	
+			.profile1:nth-child(6) {
+				background-color: #412222;
+			}
+	
+			.profile1:nth-child(7) {
+				background-color: #412222;
+			}
+	
+			.profile1:nth-child(8) {
+				background-color: #412222;
+			}
+	
+			.profile1:nth-child(9) {
+				background-color: #412222;
+			}
+	
+			.profile1:nth-child(10) {
+				background-color: #412222;
+			}
+	
+			@media screen and (max-width: 1280px) {
+	
+				.profile1 .image {
+					width: 45%;
+				}
+	
+				.profile1 .content {
+					width: 55%;
+				}
+	
+			}
+	
+			@media screen and (max-width: 980px) {
+	
+				.profile1 {
+					display: block;
+				}
+	
+					.profile1 br {
+						display: none;
+					}
+	
+					.profile1 .image {
+						width: 100%;
+					}
+	
+					.profile1 .content {
+						padding: 4em 3em 2em 3em ;
+						max-width: none;
+						text-align: center;
+						width: 100%;
+					}
+	
+			}
+	
+			@media screen and (max-width: 736px) {
+	
+				.profile1 .content {
+					padding: 3em 2em 1em 2em ;
+				}
+	
+			}
+
 /* Wrapper */
 
 	.wrapper {
@@ -2816,6 +3058,7 @@ input, select, textarea {
 			padding: 0;
 		}
 
+/* background color of main window */
 		.wrapper.style1 {
 			background-color: #412222;
 			color: #c8ece9;
