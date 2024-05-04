@@ -2511,6 +2511,17 @@ a.profile {
 				border-top: 0;
 			}
 
+/* image discover repeated images */
+			.image-flex { 
+				display: flex; /* Set the container to use flexbox */ 
+				align-items: center; /* Vertically center the images within the container */ 
+				justify-content: space-around; /* Distribute the remaining space around the images */ 
+			}
+			.image-flex img { 
+				max-width: 100%; /* Ensure images don't exceed their original size */ 
+				height: auto; /* Maintain the aspect ratio of the images */ 
+			  } 
+
 /* Button */
 
 	input[type="submit"],
@@ -2981,7 +2992,7 @@ a.profile {
 			}
 	
 			.profile1:nth-child(10) {
-				background-color: #412222;
+				
 			}
 	
 			@media screen and (max-width: 1280px) {
@@ -4240,3 +4251,17 @@ a.profile {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+/* NEW CODES */
+/* mainpage row */
+	/* .column2 {
+		float: left;
+		width: 33.33%;
+		padding: 5px;
+	} */
+	
+	/* Clearfix (clear floats) */
+	/* .row2::after {
+		content: "";
+		clear: both;
+		display: table;
+	} */
