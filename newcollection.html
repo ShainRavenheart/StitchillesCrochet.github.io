@@ -39,56 +39,107 @@
 				<!-- Main -->
 					<article id="main">
 						<header>
-							<!-- <div id="grid" class="grid-container">
+							<h2>SUMMER COLLECTION 2024</h2>
+							
+							<div class="gallery">
+								
+								<img id="myImg"
+									class="four-grid-cells"
+									src="images/collection/C1.jpg"
+									alt="Snow" />
+					
+								<img
+									id="myImg2"
+									src="images/collection/C2.jpg"
+									alt="Winter" />
+					
+								<img class="wide-image"
+									src="images/collection/C3.jpg"
+									alt="Image" />
+					
+								<img
+									src="images/collection/C4.jpg"
+									alt="Image" />
+					
+								<img
+									src="images/collection/C5.jpg"
+									alt="Image" />
+					
+								<img class="wide-image"
+									src="images/collection/C6.jpg"
+									alt="Image" />
+					
+								<img
+									src="images/collection/C7.jpg"
+									alt="Image" />
+					
+							</div></br>
+							<p>Photos by: Pat</br>
+								Model: Rechille Manlapas Jaraba </br>
+								Fit Designed and Manufactured by: Rechille Manlapas Jaraba
+							</p>
+							<!-- <img id="myImg" src="img_snow.jpg" alt="Snow" style="width:100%;max-width:300px"> -->
 
-								<div id="image1" class="griditem image1">
-								<div><img src="images/profile.jpg" alt="" /></div>
-								  <p>The background image 1 </p>
-								</div>
-							
-								<div id="image2" class="griditem image2">
-								  <p>The background image 2</p>
-							
-								</div>
-								<div id="image3" class="griditem image3">
-								  <p>The background image 3 </p>
-							
-								</div>
-								<div id="image4" class="griditem image4">
-								  <p>The background-image 4 </p>
-							
-								</div>
-								<div id="image5" class="griditem image5">
-								  <p>The background image 5 </p>
-								</div>
-							
-								<div id="image6" class="griditem image6">
-								  <p>The background-image 6 </p>
-							
-								</div>
-								<div id="image7" class="griditem image7">
-								  <p>The background-image 7 </p>
-							
-								</div>
-								<div id="image8" class="griditem image8">
-								  <p>The background-image 8 </p>
-							
-								</div>
-							
-							  </div>
-							  <p> This responsive grid is designed to keep all grid items within the outer container without stacking, making it particularly useful for displaying thumbnails on mobile devices. It uses background images with text overlay and includes an animated pop-out window (modal) that displays the clicked image.</p>
-							  <h3>Resize the view window to see how it works!</h3>
-							  <h2> Give it a little LOVE, click the ❤️icon above.</h2>
-							  <h2><a href="https://codepen.io/jcb01/pen/rNoJjOW" target="_blank"> Updated Version 2 here </a></h2>
-							
-							  <div id="modal01" class="modal">
-							
-								<img id="img01" class="mod-img animate-zoom">
-							
-								<div id="btn1" class="modal-btn ">Close</div> -->
-								<!--  <div class="modal-content  " >  
-								</div>-->
-							  <!-- </div> -->
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+				<span class="close">&times;</span>
+				<img class="modal-content" id="img01">
+				<div id="caption"></div>
+				</div>
+				
+				<div id="myModal" class="modal">
+					<span class="close">&times;</span>
+					<img class="modal-content" id="img02">
+					<div id="caption2"></div>
+					</div>
+
+				<script>
+				// Get the modal
+				var modal = document.getElementById("myModal");
+
+				// Get the image and insert it inside the modal - use its "alt" text as a caption
+				var img = document.getElementById("myImg");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+				img.onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+				}
+
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() { 
+				modal.style.display = "none";
+				}
+				</script>
+
+				<script>
+					// Get the modal
+					var modal = document.getElementById("myModal");
+	
+					// Get the image and insert it inside the modal - use its "alt" text as a caption
+					var img = document.getElementById("myImg2");
+					var modalImg = document.getElementById("img02");
+					var captionText = document.getElementById("caption");
+					img.onclick = function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+					}
+	
+					// Get the <span> element that closes the modal
+					var span = document.getElementsByClassName("close")[0];
+	
+					// When the user clicks on <span> (x), close the modal
+					span.onclick = function() { 
+					modal.style.display = "none";
+					}
+					</script>
+
+					
 							  
 						</header>
 						<!-- <section class="wrapper style5">
