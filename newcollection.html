@@ -9,139 +9,73 @@
 		<title>Stitchille's Crochet</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/collection.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
-
-				<!-- Header -->
-					<header id="header">
-						<h1><a href="index.html">Stitchille's Crochet</a></h1>
-						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Gallery</a></li>
-											<!-- <li><a href="elements.html">Elements</a></li> -->
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
-					</header>
 
 				<!-- Main -->
 					<article id="main">
 						<header>
-							<h2>SUMMER COLLECTION 2024</h2>
+							<p><a href="index.html">GO BACK</a></p>
+							<h2>SUMMER COLLECTION 2024</h2></br>
 							
 							<div class="gallery">
-								
 								<img id="myImg"
 									class="four-grid-cells"
 									src="images/collection/C1.jpg"
-									alt="Snow" />
+									alt="Image1" onclick="onClick(this)" class="modal-hover-opacity">									
+								
 					
 								<img
 									id="myImg2"
 									src="images/collection/C2.jpg"
-									alt="Winter" />
+									alt="Image2" onclick="onClick(this)" class="modal-hover-opacity">
 					
 								<img class="wide-image"
 									src="images/collection/C3.jpg"
-									alt="Image" />
+									alt="Image3" onclick="onClick(this)" class="modal-hover-opacity">
 					
 								<img
 									src="images/collection/C4.jpg"
-									alt="Image" />
+									alt="Image4" onclick="onClick(this)" class="modal-hover-opacity">
 					
 								<img
 									src="images/collection/C5.jpg"
-									alt="Image" />
+									alt="Image5" onclick="onClick(this)" class="modal-hover-opacity">
 					
 								<img class="wide-image"
 									src="images/collection/C6.jpg"
-									alt="Image" />
+									alt="Image6" onclick="onClick(this)" class="modal-hover-opacity">
 					
 								<img
 									src="images/collection/C7.jpg"
-									alt="Image" />
+									alt="Image7" onclick="onClick(this)" class="modal-hover-opacity">
 					
 							</div></br>
 							<p>Photos by: Pat</br>
 								Model: Rechille Manlapas Jaraba </br>
 								Fit Designed and Manufactured by: Rechille Manlapas Jaraba
-							</p>
-							<!-- <img id="myImg" src="img_snow.jpg" alt="Snow" style="width:100%;max-width:300px"> -->
-
-				<!-- The Modal -->
-				<div id="myModal" class="modal">
-				<span class="close">&times;</span>
-				<img class="modal-content" id="img01">
-				<div id="caption"></div>
-				</div>
-				
-				<div id="myModal" class="modal">
-					<span class="close">&times;</span>
-					<img class="modal-content" id="img02">
-					<div id="caption2"></div>
-					</div>
+							</p>								
+			
+			<div id="modal01" class="modal" onclick="this.style.display='none'">
+			<span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<div class="modal-content">
+				<img id="img01" style="max-width:100%">
+			</div>
+			</div>
 
 				<script>
-				// Get the modal
-				var modal = document.getElementById("myModal");
-
-				// Get the image and insert it inside the modal - use its "alt" text as a caption
-				var img = document.getElementById("myImg");
-				var modalImg = document.getElementById("img01");
-				var captionText = document.getElementById("caption");
-				img.onclick = function(){
-				modal.style.display = "block";
-				modalImg.src = this.src;
-				captionText.innerHTML = this.alt;
-				}
-
-				// Get the <span> element that closes the modal
-				var span = document.getElementsByClassName("close")[0];
-
-				// When the user clicks on <span> (x), close the modal
-				span.onclick = function() { 
-				modal.style.display = "none";
-				}
-				</script>
-
-				<script>
-					// Get the modal
-					var modal = document.getElementById("myModal");
-	
-					// Get the image and insert it inside the modal - use its "alt" text as a caption
-					var img = document.getElementById("myImg2");
-					var modalImg = document.getElementById("img02");
-					var captionText = document.getElementById("caption");
-					img.onclick = function(){
-					modal.style.display = "block";
-					modalImg.src = this.src;
-					captionText.innerHTML = this.alt;
-					}
-	
-					// Get the <span> element that closes the modal
-					var span = document.getElementsByClassName("close")[0];
-	
-					// When the user clicks on <span> (x), close the modal
-					span.onclick = function() { 
-					modal.style.display = "none";
-					}
+					function onClick(element) {
+						document.getElementById("img01").src = element.src;
+						document.getElementById("modal01").style.display = "block";
+					  }
 					</script>
 
 					
 							  
-						</header>
+						
 						<!-- <section class="wrapper style5">
 							<div class="inner">
 
@@ -177,7 +111,7 @@
 				<li><a href="https://www.facebook.com/profile.php?id=100094699216334" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 				<!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
 				<li><a href="https://github.com/ShainRavenheart" class="icon brands fa-github"><span class="label">Github</span></a></li>
-				<li><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlHDmztBWVdftNdgMxtJhKxgcrLHcnpJFMPZvMFbztdjlPdLQkcHFLqRNQwCTtlXsGNbRg" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				<li><a href="mailto:jarabarechille@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 			</ul>
 			<ul class="copyright">
 				<li>&copy; 2023 STITCHILLE'S CROCHET</li><li>Website Redesigner: <a href="https://www.facebook.com/manggi.cor">Shain</a></li><li>Template: <a href="http://html5up.net">HTML5 UP</a></li>
@@ -190,6 +124,7 @@
 			</div>
 
 		<!-- Scripts -->
+		 	</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
