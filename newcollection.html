@@ -18,10 +18,17 @@
 				<!-- Main -->
 					<article id="main">
 						<header>
-							<p><a href="index.html">GO BACK</a></p>
+						<div style="text-align: right">
+							<p><a href="index.html">GO BACK</a></p></div>
 							<h2>SUMMER COLLECTION 2024</h2></br>
-							
-							<div class="gallery">
+							<div class="text">
+								<p>Introducing our enchanting Summer Breeze Bralette Top </br>
+									where each stitches reflect a foliage.The lush top sparks</br>
+									confidence as if you're whispering along with the gentle breeze.</br>
+									Bold and comfy, an interesting mix for you!</p>
+							</div>
+
+							<div class="gallery" style="margin-top: 40px">
 								<img id="myImg"
 									class="four-grid-cells"
 									src="images/collection/C1.jpg"
@@ -33,14 +40,20 @@
 									src="images/collection/C2.jpg"
 									alt="Image2" onclick="onClick(this)" class="modal-hover-opacity">
 					
-								<img class="wide-image"
+									<div class="video-container">
+										<video id="tops" width="200" height="360" autoplay controls>
+											<source src="videos/GreenTops.mp4" type="video/mp4">
+											Your browser does not support the video tag.
+										</video>
+										<script >
+											var vid = document.getElementById("tops");
+											vid.volume = 0.5;
+										  </script>
+									</div>
+								
+									<img class="wide-image"
 									src="images/collection/C3.jpg"
-									alt="Image3" onclick="onClick(this)" class="modal-hover-opacity">
-					
-								<img
-									src="images/collection/C4.jpg"
-									alt="Image4" onclick="onClick(this)" class="modal-hover-opacity">
-					
+									alt="Image3" onclick="onClick(this)" class="modal-hover-opacity">					
 								<img
 									src="images/collection/C5.jpg"
 									alt="Image5" onclick="onClick(this)" class="modal-hover-opacity">
@@ -52,12 +65,15 @@
 								<img
 									src="images/collection/C7.jpg"
 									alt="Image7" onclick="onClick(this)" class="modal-hover-opacity">
-					
+
 							</div></br>
-							<p>Photos by: Pat</br>
-								Model: Rechille Manlapas Jaraba </br>
-								Fit Designed and Manufactured by: Rechille Manlapas Jaraba
-							</p>								
+							<p>Video and photos by: Pat</p>
+							<p>	Model: Rechille Jaraba</p>
+							<p>Fit Designed and Manufactured by: Rechille Jaraba</p>	
+							<!-- Introducing our enchanting Summer Breeze Bralette Top </br>
+									where each stitches reflect a foliage.The lush top sparks</br>
+									confidence as if you're whispering along with the gentle breeze.</br>
+									Bold and comfy, an interesting mix for you!	 -->						
 			
 			<div id="modal01" class="modal" onclick="this.style.display='none'">
 			<span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
@@ -117,7 +133,7 @@
 				<li>&copy; 2023 STITCHILLE'S CROCHET</li><li>Website Redesigner: <a href="https://www.facebook.com/manggi.cor">Shain</a></li><li>Template: <a href="http://html5up.net">HTML5 UP</a></li>
 			</ul>
 			<ul class="copyright">
-				<li><a href="#">Privacy Policy</a></li><li><a href="#">Terms & Conditions</a></li>
+				<li><a href="privacy.html">Privacy Policy</a></li><li><a href="#">Terms & Conditions</a></li>
 			</ul>
 		</footer>
 

@@ -4252,6 +4252,54 @@ a.profile {
 		background-color: #1d242a;
 	}
 /* NEW CODES */
-/* mainpage row */
+/* privacy policy */
+	.text2{
+		margin-top: 20px;
+		text-align: justify;
+  		text-justify: inter-word;
+		font-weight: bold;
+		font-size: 30px;
+		color: #FFC107;	
+	}
+	.text3{
+		text-align: justify;
+  		text-justify: inter-word;
+		font-size: 15px;
+	}
+	.text4{
+		text-align: justify;
+  		text-justify: inter-word;
+		font-size: 20px;
+		justify-content: flex-start;
+	}
+	.text5{
+		margin-top: 20px;
+		text-align: justify;
+  		text-justify: inter-word;
+		font-weight: 600;
+		font-size: 25px;
+		color: #FFEB3B;	
+	}
+	.box1 {
+		width: 75%;
+		border: 5px solid green;
+		padding: 50px;
+		margin: 20px;
+	  }
+	  @media screen and (max-width: 600px) {
+		.box1 {
+		  width: 90%; /* Adjust width for smaller screens */
+		  padding: 10px; /* Adjust padding for smaller screens */
+		}
+		.text2 {
+			font-size: 20px; /* Adjust font size for smaller screens */
+		  }	  
+		.text3 {
+			font-size: 10px; /* Adjust font size for smaller screens */
+		}	  
+		.text4 {
+			font-size: 12px; /* Adjust font size for smaller screens */
+		}
+	}
 
 	
