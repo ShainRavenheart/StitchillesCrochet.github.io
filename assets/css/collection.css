@@ -2930,7 +2930,6 @@ a.profile {
 	.video {
 		width: 100%; /* Set video width to 100% */
 	}
-
 	@media screen and (min-width: 400px) {
 		.video-container {
 			flex-direction: row;
